@@ -1,18 +1,21 @@
-import './App.css';
-import Pictures from './pictures.json';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import './App.scss';
+import Navigation from "./components/navigation";
+import homePage from "./pages/homePage";
+import statistics from "./pages/statistics";
+
+// import Pictures from './pictures.json';
 
 function App() {
   return (
-    <div className="app">
-      {Pictures.map(post => {
-        return(
-          <div key={post.id}>
-              <h3>{post.title}</h3>
-              <img src={post.url} alt=""></img>
-          </div>
-        )
-      })}
-    </div>
+    <Router>
+          <Navigation/>                
+            <Switch>
+              <Route exact path="/" component={homePage}/>
+              <Route path="/statistics" component={statistics}/>
+            </Switch>
+        </Router>
   );
 }
 

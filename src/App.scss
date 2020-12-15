@@ -1,0 +1,55 @@
+@import '~tailwindcss/dist/base.css';
+@import '~tailwindcss/dist/components.css';
+@import '~tailwindcss/dist/utilities.css';
+.app {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+} 
+
+.stats {
+  text-align: center;
+}
+
+.logo {
+  color: rgba(241, 22, 95, 0.863);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  list-style: none;
+  margin-left: 20%;
+}
+
+.nav-links li {
+  padding-left: 50px;
+}
+
+.info {
+  position: absolute;
+  margin-top: 10%;
+  text-align: center;
+  background-color: #050105; 
+  padding: 4rem;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  font-family: monospace;
+  color: rgba(255, 248, 220, 0.87);
+}
+
+.cursus {
+  color: rgb(255, 0, 140);
+}
