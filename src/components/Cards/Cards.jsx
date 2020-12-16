@@ -7,13 +7,13 @@ import styles from "./Cards.module.scss";
 
 const Cards = ( {data: { confirmed, recovered, deaths, lastUpdate } }) => {
     if (!confirmed) {
-        return 'miandry kely...'
+        return 'Chargement...'
     }
 
     return (
        <div className={styles.container}>
-           <Grid container spacing={2} justify="center">
-                <Grid item component={Card} md={3} className={cn(styles.Card, styles.Infected)}>
+           <Grid container spacing={3} justify="center">
+                <Grid item component={Card} xs={12} md={4} className={cn(styles.Card, styles.Infected)}>
                     <CardContent>
                         <Typography color="secondary" gutterBottom>Infectés</Typography>
                         <Typography variant="h5">
@@ -24,7 +24,7 @@ const Cards = ( {data: { confirmed, recovered, deaths, lastUpdate } }) => {
                     </CardContent>
 
                 </Grid>
-                <Grid item component={Card} md={3} className={cn(styles.Card, styles.Recovered)}>
+                <Grid item component={Card} xs={12} md={4} className={cn(styles.Card, styles.Recovered)}>
                     <CardContent>
                         <Typography color="secondary" gutterBottom>Rétablis</Typography>
                         <Typography variant="h5">
@@ -35,7 +35,7 @@ const Cards = ( {data: { confirmed, recovered, deaths, lastUpdate } }) => {
                     </CardContent>
 
                 </Grid>
-                <Grid item component={Card} md={3} className={cn(styles.Card, styles.Death)}>
+                <Grid item component={Card} xs={12} md={4} className={cn(styles.Card, styles.Death)}>
                     <CardContent>
                         <Typography color="secondary" gutterBottom>Morts</Typography>
                         <Typography variant="h5">
