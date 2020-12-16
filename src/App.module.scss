@@ -1,42 +1,20 @@
 @import '~tailwindcss/dist/base.css';
 @import '~tailwindcss/dist/components.css';
 @import '~tailwindcss/dist/utilities.css';
-.app {
-  text-align: center;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-} 
 
-.stats {
-  text-align: center;
+body {
+  background-color: rgb(250, 250, 250);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .logo {
   color: rgba(241, 22, 95, 0.863);
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 10vh;
-}
-
-.nav-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40%;
-  list-style: none;
-  margin-left: 20%;
-}
-
-.nav-links li {
-  padding-left: 50px;
 }
 
 .info {

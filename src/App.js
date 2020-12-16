@@ -1,11 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import './App.scss';
-import Navigation from "./components/navigation";
-import homePage from "./pages/homePage";
-import statistics from "./pages/statistics";
 
-// import Pictures from './pictures.json';
+import { homePage, statistics } from "./pages";
+import { Navigation } from "./components";
 
 function App() {
   return (
