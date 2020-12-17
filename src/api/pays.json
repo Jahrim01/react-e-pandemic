@@ -1,0 +1,25 @@
+{
+    "countries": [
+        {
+            "name": "Chine"
+        },
+        {
+            "name": "France"
+        },
+        {
+            "name": "Japon"
+        },
+        {
+            "name": "Madagascar"
+        },
+        {
+            "name": "Mauritius"
+        },
+        {
+            "name": "Russie"
+        },
+        {
+            "name": "USA"
+        }
+    ]
+}

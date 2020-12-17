@@ -1,0 +1,15 @@
+{
+	"confirmed": {
+		"value": 2447458,
+		"detail": "https://covid19.mathdro.id/api/countries/France/confirmed"
+	},
+	"recovered": {
+		"value": 184780,
+		"detail": "https://covid19.mathdro.id/api/countries/France/recovered"
+	},
+	"deaths": {
+		"value": 59182,
+		"detail": "https://covid19.mathdro.id/api/countries/France/deaths"
+	},
+	"lastUpdate": "2020-12-16T12:28:37.000Z"
+}

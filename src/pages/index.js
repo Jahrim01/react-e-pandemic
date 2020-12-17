@@ -1,2 +1,2 @@
 export { default as homePage} from './homePage';
-export { default as statistics} from './statistics';
+export { default as Statistics} from './Statistics';

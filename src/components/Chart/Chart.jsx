@@ -9,32 +9,33 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
 
     useEffect(() => {
         const fetchAPI = async () => {
-            setDailyData(await fetchDailyData());
+            const initialDailyData = await fetchDailyData();
+            setDailyData(initialDailyData);
         }
 
         fetchAPI();
     }, []);
 
-    const LineChart = (
-        dailyData.length
+    const lineChart = (
+        dailyData[0]
         ? (
             <Line
             data={{
-            labels: dailyData.map(({ date }) => date),
+            labels: dailyData.map(({ date }) => new Date(date).toLocaleDateString()),
             datasets: [{
-                data: dailyData.map(({ confirmed }) => confirmed),
+                data: dailyData.map((data) => data.confirmed),
                 label: 'Infectés',
                 borderColor: '#FF5733',
                 backgroundColor: 'rgba(255, 87, 51, 0.5)',
                 fill: true,
             }, {
-                data: dailyData.map(({ recovered }) => recovered),
+                data: dailyData.map((data) => data.recovered),
                 label: 'Rétablis',
                 borderColor: '#42B005',
                 backgroundColor: 'rgba(66, 176, 5, 0.5)',
                 fill: true,
             }, {
-                data: dailyData.map(({ deaths }) => deaths),
+                data: dailyData.map((data) => data.deaths),
                 label: 'morts',
                 borderColor: 'purple',
                 backgroundColor: 'rgba(117, 3, 98, 0.5)',
@@ -63,7 +64,7 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
                    }}
                 options={{
                     legend: {display: false},
-                    title: {display: true, text:`Current state in ${country}`},
+                    title: {display: true, text:`Données courrantes pour : ${country}`},
                 }}
             />
         )
@@ -72,7 +73,7 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
 
     return (
        <div className={styles.container}>
-           {country ? barChart : LineChart}
+           {country ? barChart : lineChart}
        </div>
     );
 }

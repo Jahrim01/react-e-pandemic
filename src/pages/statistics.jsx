@@ -1,27 +1,28 @@
 import React from 'react';
 import AOS from 'aos';
-import 'aos/dist/aos.css';
-import styles from '../App.module.scss';
 import { Cards, Chart, Countries } from "../components";
 import { fetchData } from "../api";
 
+import 'aos/dist/aos.css';
+import styles from './Statistics.module.scss';
+
 AOS.init();
 
-class statistics extends React.Component {
+class Statistics extends React.Component {
     state = {
         data: {},
         country: '',
     }
     async componentDidMount() {
-        const fetchedData = await fetchData();
+        const data = await fetchData();
         
-        this.setState({ data: fetchedData  });
+        this.setState({ data });
     }
 
     handleCountryChange = async (country) => {
-        const fetchedData = await fetchData(country);
+        const data = await fetchData(country);
         
-        this.setState({ data: fetchedData, country: country });
+        this.setState({ data, country: country });
     }
 
     render() {
@@ -37,4 +38,4 @@ class statistics extends React.Component {
     }
 }
 
-export default statistics
+export default Statistics

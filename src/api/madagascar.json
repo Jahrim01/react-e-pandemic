@@ -1,0 +1,15 @@
+{
+	"confirmed": {
+		"value": 17587,
+		"detail": "https://covid19.mathdro.id/api/countries/Madagascar/confirmed"
+	},
+	"recovered": {
+		"value": 16992,
+		"detail": "https://covid19.mathdro.id/api/countries/Madagascar/recovered"
+	},
+	"deaths": {
+		"value": 259,
+		"detail": "https://covid19.mathdro.id/api/countries/Madagascar/deaths"
+	},
+	"lastUpdate": "2020-12-16T13:26:30.000Z"
+}

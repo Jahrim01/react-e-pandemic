@@ -1,0 +1,15 @@
+{
+    "confirmed": {
+        "value": 524,
+        "detail": "https://covid19.mathdro.id/api/countries/mauritius/confirmed"
+    },
+    "recovered": {
+        "value": 489,
+        "detail": "https://covid19.mathdro.id/api/countries/mauritius/recovered"
+    },
+    "deaths": {
+        "value": 10,
+        "detail": "https://covid19.mathdro.id/api/countries/mauritius/deaths"
+    },
+    "lastUpdate": "2020-12-16T21:26:49.000Z"
+}

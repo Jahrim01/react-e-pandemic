@@ -1,0 +1,15 @@
+{
+	"confirmed": {
+		"value": 187673,
+		"detail": "https://covid19.mathdro.id/api/countries/Japan/confirmed"
+	},
+	"recovered": {
+		"value": 155391,
+		"detail": "https://covid19.mathdro.id/api/countries/Japan/recovered"
+	},
+	"deaths": {
+		"value": 2610,
+		"detail": "https://covid19.mathdro.id/api/countries/Japan/deaths"
+	},
+	"lastUpdate": "2020-12-16T12:28:37.000Z"
+}

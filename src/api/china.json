@@ -1,0 +1,15 @@
+{
+	"confirmed": {
+		"value": 94619,
+		"detail": "https://covid19.mathdro.id/api/countries/China/confirmed"
+	},
+	"recovered": {
+		"value": 88305,
+		"detail": "https://covid19.mathdro.id/api/countries/China/recovered"
+	},
+	"deaths": {
+		"value": 4757,
+		"detail": "https://covid19.mathdro.id/api/countries/China/deaths"
+	},
+	"lastUpdate": "2020-12-16T12:28:37.000Z"
+}

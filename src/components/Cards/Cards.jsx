@@ -1,54 +1,41 @@
-import React from "react";
-import { Card, CardContent, Typography,Grid } from "@material-ui/core";
-import CountUp from "react-countup";
-import cn from "classnames";
+import React from 'react';
+import { Grid } from '@material-ui/core';
+import CardComponent from './Card/Card';
 
-import styles from "./Cards.module.scss";
+import styles from './Cards.module.scss';
 
-const Cards = ( {data: { confirmed, recovered, deaths, lastUpdate } }) => {
-    if (!confirmed) {
-        return 'Chargement...'
-    }
+const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
+  if (!confirmed) {
+    return 'Loading...';
+  }
 
-    return (
-       <div className={styles.container}>
-           <Grid container spacing={3} justify="center">
-                <Grid item component={Card} xs={12} md={4} className={cn(styles.Card, styles.Infected)}>
-                    <CardContent>
-                        <Typography color="secondary" gutterBottom>Infectés</Typography>
-                        <Typography variant="h5">
-                            <CountUp start={0} end={confirmed.value} duration={2} separator="," />
-                        </Typography>
-                        <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography variant="body2">Nombre de cas positifs</Typography>
-                    </CardContent>
+  return (
+    <div className={styles.container}>
+      <Grid container spacing={3} justify="center">
+        <CardComponent
+          className={styles.infected}
+          cardTitle="Infectés"
+          value={confirmed.value}
+          lastUpdate={lastUpdate}
+          cardSubtitle="Nombre de cas positifs au COVID-19."
+        />
+        <CardComponent
+          className={styles.recovered}
+          cardTitle="Rétablis"
+          value={recovered.value}
+          lastUpdate={lastUpdate}
+          cardSubtitle="Nombre de cas guéris du COVID-19."
+        />
+        <CardComponent
+          className={styles.deaths}
+          cardTitle="Morts"
+          value={deaths.value}
+          lastUpdate={lastUpdate}
+          cardSubtitle="Nombre de mort du COVID-19."
+        />
+      </Grid>
+    </div>
+  );
+};
 
-                </Grid>
-                <Grid item component={Card} xs={12} md={4} className={cn(styles.Card, styles.Recovered)}>
-                    <CardContent>
-                        <Typography color="secondary" gutterBottom>Rétablis</Typography>
-                        <Typography variant="h5">
-                            <CountUp start={0} end={recovered.value} duration={2} separator="," />
-                        </Typography>
-                        <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography variant="body2">Nombre de cas rétablis</Typography>
-                    </CardContent>
-
-                </Grid>
-                <Grid item component={Card} xs={12} md={4} className={cn(styles.Card, styles.Death)}>
-                    <CardContent>
-                        <Typography color="secondary" gutterBottom>Morts</Typography>
-                        <Typography variant="h5">
-                            <CountUp start={0} end={deaths.value} duration={2} separator="," />
-                        </Typography>
-                        <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography variant="body2">Nombre de morts</Typography>
-                    </CardContent>
-
-                </Grid>
-           </Grid>
-       </div>
-    );
-}
-
-export default Cards
+export default Info;

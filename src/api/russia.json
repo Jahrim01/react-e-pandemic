@@ -1,0 +1,15 @@
+{
+	"confirmed": {
+		"value": 2708940,
+		"detail": "https://covid19.mathdro.id/api/countries/Russia/confirmed"
+	},
+	"recovered": {
+		"value": 2155842,
+		"detail": "https://covid19.mathdro.id/api/countries/Russia/recovered"
+	},
+	"deaths": {
+		"value": 47994,
+		"detail": "https://covid19.mathdro.id/api/countries/Russia/deaths"
+	},
+	"lastUpdate": "2020-12-16T12:28:37.000Z"
+}
