@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(250, 250, 250);
+  background-color: rgb(255, 255, 255);
 }
 
 .container {
@@ -7,25 +7,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-.logo {
-  color: rgba(241, 22, 95, 0.863);
-}
-
-.info {
-  position: absolute;
-  margin-top: 10%;
-  text-align: center;
-  background-color: #050105; 
-  padding: 4rem;
-  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-  font-family: monospace;
-  color: rgba(255, 248, 220, 0.87);
-}
-
-.cursus {
-  color: rgb(255, 0, 140);
 }
 
 /*------scroll bar---------------------*/
