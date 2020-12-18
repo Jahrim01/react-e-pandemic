@@ -8,15 +8,16 @@ const Navigation = () => {
 
         return (
 
-            <Navbar fixed="top" collapseOnSelect expand="md" className="border-bottom-3 border-black">
-                <Navbar.Brand><img src={process.env.PUBLIC_URL + 'e_pandemics.png'} alt="logo"/><span style={{color: 'crimson'}}>E-pandemics</span></Navbar.Brand>
+            <Navbar fixed="top" collapseOnSelect expand="md">
+                <Navbar.Brand><img src={process.env.PUBLIC_URL + 'images/e_pandemics.png'} alt="logo"/><span style={{color: 'crimson'}}>E-pandemics</span></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="mr-auto">
+                    <Nav className="mr-auto ml-auto">
+                        <a href="#">| ANDRIANALIZANDRY Mirija Valisoa | ESIIA 5 | N°19 |</a>
                     </Nav>
                     <Nav>
-                    <Nav.Link className="sizing" href="/">Accueil</Nav.Link>
-                    <Nav.Link className="sizing" href="/statistics">Statistiques</Nav.Link>
+                    <Nav.Link href="/">Accueil</Nav.Link>
+                    <Nav.Link href="/statistics">Statistiques</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

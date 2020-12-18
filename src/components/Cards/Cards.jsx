@@ -6,7 +6,7 @@ import styles from './Cards.module.scss';
 
 const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
   if (!confirmed) {
-    return 'Loading...';
+    return <img src={process.env.PUBLIC_URL + 'waiting.gif'} alt="loading"/>
   }
 
   return (

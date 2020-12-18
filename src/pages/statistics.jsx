@@ -30,8 +30,8 @@ class Statistics extends React.Component {
 
         return (
             <div data-aos="zoom-in" data-aos-duration="1000" className={styles.container}>
-                <Cards data={data} />
                 <Countries handleCountryChange={this.handleCountryChange} />
+                <Cards data={data} /> 
                 <Chart data={data} country={country} />
             </div>
         )
