@@ -15,8 +15,10 @@ class Statistics extends React.Component {
     }
     async componentDidMount() {
         const data = await fetchData();
+        setTimeout(() => {
+            this.setState({ data });
+        }, 4000);
         
-        this.setState({ data });
     }
 
     handleCountryChange = async (country) => {
@@ -29,10 +31,10 @@ class Statistics extends React.Component {
         const { data, country } = this.state
 
         return (
-            <div data-aos="zoom-in" data-aos-duration="1000" className={styles.container}>
-                <Cards data={data} />
-                <Countries handleCountryChange={this.handleCountryChange} /> 
-                <Chart data={data} country={country} />
+            <div className={styles.container}>
+                <Cards data-aos="zoom-in" data-aos-duration="2000" data={data} />
+                <Countries data-aos="zoom-in" data-aos-duration="2000" handleCountryChange={this.handleCountryChange} /> 
+                <Chart data-aos="zoom-in" data-aos-duration="2000" data={data} country={country} />
                 <br/>
             </div>
         )

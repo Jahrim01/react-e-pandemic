@@ -11,7 +11,7 @@ const Footer = () => {
     <Navbar collapseOnSelect expand="md">
           <Navbar.Brand><img src={process.env.PUBLIC_URL + 'iconvirus.png'} alt="logo"/></Navbar.Brand>
               <Nav className="mr-auto ml-auto">
-                  <a href="#">© 2020 Copyright | Mirija</a>
+                  <a href="#Mirija">© 2020 Copyright | Mirija</a>
               </Nav>
               <Nav>
                   <img src={process.env.PUBLIC_URL + 'iconvirus.png'} alt="logo"/>

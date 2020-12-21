@@ -1,8 +1,10 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import Typed from 'react-typed';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './Navigation.module.scss';
+import styles from './Navigation.module.scss';
 
 const Navigation = () => {
 
@@ -13,11 +15,19 @@ const Navigation = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto ml-auto">
-                        <a href="#">| ANDRIANALIZANDRY Mirija Valisoa | ESIIA 5 | N°19 |</a>
+                        <Typed
+                        strings={[
+                            '✊ Together against the Covid19 ✊',
+                            'Take care 👨‍⚕️',
+                            'Be blessed 👼']}
+                        typeSpeed={80}
+                        backSpeed={50}
+                        className={styles.typer}
+                        loop />
                     </Nav>
                     <Nav>
                     <Nav.Link href="/">Accueil</Nav.Link>
-                    <Nav.Link href="/statistics">Statistiques</Nav.Link>
+                    <Nav.Link href="/Statistics">Statistiques</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

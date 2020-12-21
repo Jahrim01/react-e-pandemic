@@ -11,13 +11,13 @@ const homePage = () => {
 
     return (
         <Container maxWidth>
-            <Grid container spacing={5}>
+            <Grid container spacing={4}>
                 <Grid item xs={12} sm={8} md={6}>
                     <Paper elevation={0} className={styles.paper}>
                         <div data-aos="fade-right" data-aos-duration="2000">
                             <img src={process.env.PUBLIC_URL + 'images/covid.gif'} alt="covid" className={styles.covid}/>
                             <Typography variant="h3" color="secondary">
-                                Qu'est-ce que le COVID-19?
+                                Qu'est-ce que la COVID-19?
                             </Typography>
                             <p className={styles.border}></p>
                             
@@ -58,31 +58,31 @@ const homePage = () => {
                                     <br/>
                                     D’autres symptômes moins courants peuvent toucher certains patients :
                                     <br/>
-                                    - Perte du goût et de l’odorat,
-                                    - Congestion nasale,
-                                    - Conjonctivite (yeux rouges),
-                                    - Mal de gorge,
-                                    - Maux de tête,
-                                    - Douleurs musculaires ou articulaires,
-                                    - Différents types d’éruption cutanée,
-                                    - Nausées ou vomissements,
-                                    - Diarrhée,
+                                    - Perte du goût et de l’odorat
+                                    - Congestion nasale
+                                    - Conjonctivite (yeux rouges)
+                                    - Mal de gorge
+                                    - Maux de tête
+                                    - Douleurs musculaires ou articulaires
+                                    - Différents types d’éruption cutanée
+                                    - Nausées ou vomissements
+                                    - Diarrhée
                                     - Frissons ou vertiges.
                                     <br/>
 
                                     Les symptômes de la forme grave de COVID-19 sont les suivants :
                                     <br/>
-                                    - Essoufflement,
-                                    - Perte d’appétit,
-                                    - État confusionnel,
-                                    - Douleurs ou sensation d’oppression persistantes dans la poitrine,
+                                    - Essoufflement
+                                    - Perte d’appétit
+                                    - État confusionnel
+                                    - Douleurs ou sensation d’oppression persistantes dans la poitrine
                                     - Température élevée (supérieure à 38° C).
                                 </Typography>
                                 </AccordionDetails>
                             </Accordion>
                             </div>
                             <br/>
-                            <Button variant="contained" color="secondary" href="https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/coronavirus-disease-covid-19#:~:text=symptomes">
+                            <Button variant="contained" color="primary" href="https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/coronavirus-disease-covid-19#:~:text=symptomes">
                                 Voir l'article
                             </Button>
                         </div>
@@ -105,74 +105,74 @@ const homePage = () => {
                             Si vous avez de la fièvre et vivez dans une région où le paludisme ou la dengue sévit, consultez un médecin.
                             </Typography>
                                 <br/>
-                            <Button variant="contained" color="secondary" href="https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters?gclid=CjwKCAiAoOz-BRBdEiwAyuvA66gQC7Z-keDb2FRyN-UV-fXHpvp-NtvI8qj3RVWSryXYJeVZPYwxKxoCCYEQAvD_BwE#recovery">
+                            <Button variant="contained" color="primary" href="https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters?gclid=CjwKCAiAoOz-BRBdEiwAyuvA66gQC7Z-keDb2FRyN-UV-fXHpvp-NtvI8qj3RVWSryXYJeVZPYwxKxoCCYEQAvD_BwE#recovery">
                                 En savoir plus
                             </Button>
                             
                         </div>
                         <div><br/></div>
                     </Paper> 
-                    <Paper elevation={0} className={styles.video}>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6b2LB6nCmBs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen className={styles.mediavideo}></iframe>
+                    <Paper elevation={0} className={styles.video} data-aos="zoom-out" data-aos-duration="2000">
+                        <iframe title="video covid" width="560" height="315" src="https://www.youtube.com/embed/6b2LB6nCmBs" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen className={styles.mediavideo}></iframe>
                     </Paper>
                 </Grid>
             </Grid>
             <Grid container className={styles.container}>
                 <Grid item xs={12}>
                         <Paper elevation={0} className={styles.paper}>
-                            <div data-aos="zoom-out-up" data-aos-duration="2000">
-                                <img src={process.env.PUBLIC_URL + 'images/recovered.jpg'} alt="fighting corona"/>
+                            <div>
+                                <img data-aos="fade-left" data-aos-duration="2000" src={process.env.PUBLIC_URL + 'images/recovered.jpg'} alt="fighting corona"/>
                                 <Typography variant="h3" color="secondary">
                                     Comment se protéger et protéger les autres si on ne sait pas qui est infecté ?
                                 </Typography>
                                 <p className={styles.border}></p>
                                 <Grid container spacing={3}>
                                     <Grid item xs={12} sm={4} md={3}>
-                                        <img src={process.env.PUBLIC_URL + 'images/satyhome.gif'} alt="stay at home" className={styles.gestes}/>
+                                        <img data-aos="zoom-in" data-aos-duration="2000" src={process.env.PUBLIC_URL + 'images/satyhome.gif'} alt="stay at home" className={styles.gestes}/>
                                         <Typography variant="h6" color="textSecondary" component="p">
                                             # Restez chez vous !!
                                         </Typography>
                                     </Grid>
                                     <Grid item xs={12} sm={4} md={3}>
-                                        <img src={process.env.PUBLIC_URL + 'images/donttouch.gif'} alt="respectez la distance 1m" className={styles.gestes}/>
+                                        <img data-aos="zoom-in" data-aos-duration="2000" src={process.env.PUBLIC_URL + 'images/donttouch.gif'} alt="respectez la distance 1m" className={styles.gestes}/>
                                         <Typography variant="h6" color="textSecondary" component="p">
                                             # Ne touchez pas votre nez
                                         </Typography>
                                     </Grid>
                                     <Grid item xs={12} sm={4} md={3}>
-                                        <img src={process.env.PUBLIC_URL + 'images/handswash.gif'} alt="lavez régulièrement les mains" className={styles.gestes}/>
+                                        <img data-aos="zoom-in" data-aos-duration="2000" src={process.env.PUBLIC_URL + 'images/handswash.gif'} alt="lavez régulièrement les mains" className={styles.gestes}/>
                                         <Typography variant="h6" color="textSecondary" component="p">
-                                            # lavez vos mains régulièrement
+                                            # Lavez vos mains régulièrement
                                         </Typography>
                                     </Grid>
                                     <Grid item xs={12} sm={4} md={3}>
-                                        <img src={process.env.PUBLIC_URL + 'images/keepdistance.gif'} alt="ne touchez pas vos nez" className={styles.gestes}/>
+                                        <img data-aos="zoom-in" data-aos-duration="2000" src={process.env.PUBLIC_URL + 'images/keepdistance.gif'} alt="ne touchez pas vos nez" className={styles.gestes}/>
                                         <Typography variant="h6" color="textSecondary" component="p">
                                             # Respectez la distance d' 1m
                                         </Typography>
                                     </Grid>
                                     <Grid item xs={12} sm={4} md={3}>
-                                        <img src={process.env.PUBLIC_URL + 'images/covercough.gif'} alt="éternuement" className={styles.gestes}/>
+                                        <img data-aos="zoom-in" data-aos-duration="2000" src={process.env.PUBLIC_URL + 'images/covercough.gif'} alt="éternuement" className={styles.gestes}/>
                                         <Typography variant="h6" color="textSecondary" component="p">
                                             # Utilisez votre coude pour éternuer
                                         </Typography>
                                     </Grid>
                                     <Grid item xs={12} sm={4} md={3}>
-                                        <img src={process.env.PUBLIC_URL + 'images/salutation.jpg'} alt="ne serrez pas la main" className={styles.gestes}/>
-                                        <Typography variant="h6" color="textSecondary" component="p">
-                                            # Ne serrez pas la main
-                                        </Typography>
-                                    </Grid>
-                                    <Grid item xs={12} sm={4} md={3}>
-                                        <img src={process.env.PUBLIC_URL + 'images/wearmask.gif'} alt="wear mask" className={styles.gestes}/>
+                                        <img data-aos="zoom-in" data-aos-duration="2000" src={process.env.PUBLIC_URL + 'images/wearmask.gif'} alt="wear mask" className={styles.gestes}/>
                                         <Typography variant="h6" color="textSecondary" component="p">
                                             # Portez votre masque
                                         </Typography>
                                     </Grid>
                                     <Grid item xs={12} sm={4} md={3}>
-                                        <img src={process.env.PUBLIC_URL + 'images/covidtest.jpg'} alt="faites-vous tester" className={styles.gestes}/>
+                                        <img data-aos="zoom-in" data-aos-duration="2000" src={process.env.PUBLIC_URL + 'images/covidtest.jpg'} alt="faites-vous tester" className={styles.gestes}/>
                                         <Typography variant="h6" color="textSecondary" component="p">
                                             # Faites-vous tester
+                                        </Typography>
+                                    </Grid>
+                                    <Grid item xs={12} sm={4} md={3}>
+                                        <img data-aos="zoom-in" data-aos-duration="2000" src={process.env.PUBLIC_URL + 'images/salutation.jpg'} alt="salutation" className={styles.gestes}/>
+                                        <Typography variant="h6" color="textSecondary" component="p">
+                                            # Ne serrez pas la main
                                         </Typography>
                                     </Grid>
                                 </Grid>
