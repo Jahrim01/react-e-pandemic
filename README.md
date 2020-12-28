@@ -1,9 +1,18 @@
 # Website
 Link : [https://e-pandemic.netlify.app](https://e-pandemic.netlify.app)
 
-# Getting Started with Create React App
+## Description du projet
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Il s'agit d'une application web conçue pour se mettre au courrant de l'évolution du Covid-19 dans le monde entier,
+et de connaitre un peu plus à propos du virus et les précautions à suivre.
+
+## Technologies utilisées
+
+- ReactJs
+- Material-UI
+- ChartJs
+- React-Bootstrap
+- Axios
 
 ## Available Scripts
 
