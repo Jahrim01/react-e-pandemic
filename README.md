@@ -14,6 +14,10 @@ et de connaitre un peu plus à propos du virus et les précautions à suivre.
 - React-Bootstrap
 - Axios
 
+## Aperçu du site
+
+![e_pandemic](https://user-images.githubusercontent.com/36816520/103227748-63b48e80-492f-11eb-9ba5-922d98d1c496.PNG)
+
 ## Available Scripts
 
 In the project directory, you can run:
