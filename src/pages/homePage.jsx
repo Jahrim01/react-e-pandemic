@@ -10,8 +10,8 @@ AOS.init();
 const homePage = () => {
 
     return (
-        <Container maxWidth>
-            <Grid container spacing={4}>
+        <Container>
+            <Grid container spacing={4} className={styles.center}>
                 <Grid item xs={12} sm={8} md={6}>
                     <Paper elevation={0} className={styles.paper}>
                         <div data-aos="fade-right" data-aos-duration="2000">
@@ -121,7 +121,7 @@ const homePage = () => {
                 <Grid item xs={12}>
                         <Paper elevation={0} className={styles.paper}>
                             <div>
-                                <img data-aos="fade-left" data-aos-duration="2000" src={process.env.PUBLIC_URL + 'images/recovered.jpg'} alt="fighting corona"/>
+                                <img data-aos="fade-left" data-aos-duration="2000" src={process.env.PUBLIC_URL + 'images/recovered.jpg'} alt="fighting corona" className={styles.fightcorona}/>
                                 <Typography variant="h3" color="secondary">
                                     Comment se protéger et protéger les autres si on ne sait pas qui est infecté ?
                                 </Typography>
