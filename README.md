@@ -1,5 +1,5 @@
 # Website
-Link : [https://e-pandemic.netlify.app](https://e-pandemic.netlify.app)
+Link : [https://e-pandemic.netlify.app/](https://e-pandemic.netlify.app/)
 
 ## Description du projet
 
